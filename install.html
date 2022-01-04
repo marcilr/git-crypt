@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<!-- =============================================================
+     install.html
+     Created Mon 03 Jan 2022 02:29:37 PM AKST
+     Copyright (C) 2022 by Raymond E. Marcil <marcilr@gmail.com>
+     ============================================================= -->
+<head>
+
+</head>
+<body style="width:80%; vertical-align: middle;">
+install.html<br>
+Created Mon 03 Jan 2022 02:29:37 PM AKST<br>
+Copyright (C) 2022 by Raymond E. Marcil 
+<a href="mailto:marcilr@gmail.com">&lt;marcilr@gmail.com&gt;</a><br>
+
+
+<!-- ============================ GIT-CRYPT =======================-->
+<!-- ============================ GIT-CRYPT =======================-->
+<!-- ============================ GIT-CRYPT =======================-->
+<p style="margin-top:1.5cm;">
+<h2>git-crypt installation</h2>
+Installation of <a href="https://github.com/AGWA/git-crypt?ref=hackernoon.com">git-crypt</a> on <a href="https://www.debian.org/releases/buster/">Debian 10 buster</a>:<br>
+
+<ol>
+  <li>Install git-crypt<br>
+$ apt-cache search git-crypt<br>
+git-crypt - Transparent file encryption in git<br>
+$ sudo aptitude install git-crypt<br>
+[sudo] password for marcilr:<br>
+The following NEW packages will be installed:<br>
+&nbsp;&nbsp;git-crypt<br>
+0 packages upgraded, 1 newly installed, 0 to remove and 0 not upgraded.<br>
+Need to get 74.9 kB of archives. After unpacking 201 kB will be used.<br>
+Get: 1 http://deb.debian.org/debian buster/main amd64 git-crypt amd64 0.6.0-1 [74.9 kB]<br>
+Fetched 74.9 kB in 0s (282 kB/s)<br>
+Selecting previously unselected package git-crypt.<br>
+(Reading database ... 384492 files and directories currently installed.)<br>
+Preparing to unpack .../git-crypt_0.6.0-1_amd64.deb ...<br>
+Unpacking git-crypt (0.6.0-1) ...<br>
+Setting up git-crypt (0.6.0-1) ...<br>
+Processing triggers for man-db (2.8.5-2) ...<br>
+<br>
+$<br>
+<br>
+  <li>Create a new git repository, with
+    <b style="font-family: Sans-Serif;Helvetica,Arial;">git init</b>,
+    or change into an existing repo with
+    <b style="font-family: Sans-Serif;Helvetica,Arial;">cd myrepo</b>
+  <li>Update repository to use git-crypt with:<br>
+    <p style="font-family: Sans-Serif;Helvetica,Arial;">
+      $ cd myrepo<br>
+      $ git-crypt init<br>
+    </p>
+    Observe output:<br>
+    <p style="font-family: Sans-Serif;Helvetica,Arial;">
+      Generating key...
+    </p>
+    Save a copy of the git-crypt symmetric key the was generated
+    for the repository to the next higher directory:
+    <p style="font-family: Sans-Serif;Helvetica,Arial;">
+      $ git-crypt export-key ../git-crypt-key
+    </p>
+    
+
+</ol>
+
+<!-- ============================== LINKS =========================-->
+<!-- ============================== LINKS =========================-->
+<p style="margin-top:1.5cm;">
+
+<h2>Links</h2>
+
+<p>
+git-crypt<br>
+<a href="https://github.com/AGWA/git-crypt?ref=hackernoon.com">
+https://github.com/AGWA/git-crypt?ref=hackernoon.com</a>
+
+<p>
+git-crypt install page<br>
+<a href="https://github.com/AGWA/git-crypt/blob/master/INSTALL.md?ref=hackernoon.com">
+https://github.com/AGWA/git-crypt/blob/master/INSTALL.md?ref=hackernoon.com</a>
+
+<p>
+Things You Must Know About git-crypt To Successfully <br>
+Protect Your Secret Data<br>
+November 9th 2020<br>
+<a href="https://hackernoon.com/things-you-must-know-about-git-crypt-to-successfully-protect-your-secret-data-kyi3wi6">
+https://hackernoon.com/things-you-must-know-about-git-crypt-to-successfully-protect-your-secret-data-kyi3wi6</a
+
+</body>
+</html>
